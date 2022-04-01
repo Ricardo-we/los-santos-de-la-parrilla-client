@@ -1,0 +1,25 @@
+.slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-img-text {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.main-wraper {
+    width: 100%;
+    background-color: rgb(173, 17, 17);
+    color: white;
+}

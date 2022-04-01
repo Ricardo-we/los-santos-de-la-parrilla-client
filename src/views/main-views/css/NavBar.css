@@ -1,0 +1,11 @@
+.nav-link {
+    transition: 300ms linear;
+    border-bottom-width: 2px solid;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    border-bottom-color: rgba(63, 62, 62, 0.639);
+}
