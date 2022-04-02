@@ -14,7 +14,7 @@
 .modal {
     z-index: 10001;
     min-width: 200px;
-    width: 600px;
+    max-width: 600px;
     height: 400px;
     position: absolute;
     background-color: rgb(255, 253, 253);
@@ -28,8 +28,8 @@
 
 .close-btn {
     position: absolute;
-    top: 5px;
-    right: 20px;
+    top: 2%;
+    right: 10%;
     border: none;
     background-color: transparent;
 }
