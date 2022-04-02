@@ -23,3 +23,10 @@
     background-color: rgb(173, 17, 17);
     color: white;
 }
+
+.home-section-img {
+    min-width: 250px;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+}

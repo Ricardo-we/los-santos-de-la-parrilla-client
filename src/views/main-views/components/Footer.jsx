@@ -21,7 +21,7 @@ const styles = {
     footer: {
         position: 'static',
         left: 0,
-        bottom: 0
+        bottom: 0,
     },
     footerLink: {
         textDecoration: 'none',

@@ -67,24 +67,25 @@ function Homepage() {
         <Slider slides={SLIDES_IMAGES}/>
         <div className="main-wraper">
             <div className="container-xl">
-                <div className="row">
-                    <div className="col d-flex flex-column align-items-center justify-content-center">
+                <div className="d-flex flex-row align-items-center justify-content-center flex-wrap mb-4">
+                    <div
+                        style={{ minWidth: 250, width: '500px'}} 
+                        className="d-flex flex-column align-items-center justify-content-center text-center">
                         <h1>Quiénes somos?</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius soluta voluptates veritatis temporibus ullam accusantium ipsa neque fuga nam expedita vel, totam odit ipsum aut praesentium doloremque, magnam adipisci.
                         </p>
                     </div>
-                    <div className="col d-flex flex-column align-items-center">
-                        <img src={image6} className="img img-fluid"/>
-                    </div>
+                        <img src={image6} className="home-section-img"/>
                 </div>
             </div>
             <div className="container-xl">
-                <div className="row">
-                    <div className="col d-flex flex-column align-items-center">
-                        <img src={image7} className="img img-fluid"/>
-                    </div>
-                    <div className="col d-flex flex-column align-items-center justify-content-center">
+                <div className="d-flex flex-row align-items-center justify-content-center flex-wrap mb-4">
+                        <img src={image7} className="home-section-img"/>
+                    <div 
+                        style={{ minWidth: 250, width: '500px'}} 
+                        className="d-flex flex-column align-items-center justify-content-center text-center"
+                    >
                         <h1>Que hacemos?</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius soluta voluptates veritatis temporibus ullam accusantium ipsa neque fuga nam expedita vel, totam odit ipsum aut praesentium doloremque, magnam adipisci.
