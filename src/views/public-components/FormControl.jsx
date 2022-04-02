@@ -4,7 +4,7 @@ export default function FormControl({ onChange, label, type="text", value }){
             <label>{label}</label>
             <input 
                 placeholder={label} 
-                value={value || ''}
+                value={value}
                 type={type} 
                 onChange={
                     type === "file"? e => onChange(e.target.files[0]) :
@@ -23,7 +23,7 @@ export function TextAreaFormControl({ onChange, label, value }){
             <textarea
                 rows="6"
                 placeholder={label} 
-                value={value || ''}
+                value={value}
                 onChange={e => onChange(e.target.value)} 
                 className="form-control" 
                 style={{resize: 'none'}}

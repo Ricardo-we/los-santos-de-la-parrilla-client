@@ -21,9 +21,7 @@ function AdminLogin() {
         if(response.key){
             localStorage.setItem('admin_key', response.key)
             navigate('/admin/home')
-            return
         }
-        console.log('Invalid')
         toast.warn("Invalid data");
     }
 

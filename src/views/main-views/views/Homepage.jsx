@@ -34,23 +34,26 @@ function Homepage() {
         <Slide title="La mejor carne" image={image1}/>,
         <Slide title="Alta calidad" content="Disfruta unas exquisitas costillas" image={image2}/>,
         <Slide slideTitle="La mejor carne" image={image3}/>,
-        <Slide 
-            title={lastTwoEvents[0].title} 
-            alignment="start"
-            content={lastTwoEvents[0].description} 
-            image={lastTwoEvents[0].image.url}
-        />,
-        <Slide 
-            title={lastTwoEvents[1].title} 
-            alignment='end'
-            content={lastTwoEvents[1].description} 
-            image={lastTwoEvents[1].image.url}
-        />,
     ]
 
+    
     const getLastTwoEventsHandler = async () => {
         const response = await getEventsPaginated(2,'last')
         setLastTwoEvents(response);
+        if(lastTwoEvents.length > 0){
+            SLIDES_IMAGES.push(<Slide 
+                title={lastTwoEvents[0].title} 
+                alignment="start"
+                content={lastTwoEvents[0].description} 
+                image={lastTwoEvents[0].image.url}
+            />,
+            <Slide 
+                title={lastTwoEvents[1].title} 
+                alignment='end'
+                content={lastTwoEvents[1].description} 
+                image={lastTwoEvents[1].image.url}
+            />,)
+        }
     }
 
     useEffect(() => {
